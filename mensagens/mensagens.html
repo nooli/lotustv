@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tv Lotus</title>
+        <meta name="description" content="TV Lotus">
+        <meta name="author" content="Bruno de Oliveira">
+        <meta name="keywords" content="Teve, TV, pele, saude, alegria, alergia, micose, cuidados">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css?v=2">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--Mensagens-->
+        <div class="mensagens">
+            <div class="mensagens-bloc" class="teste">
+               <img class="img-upload-mensagem" src="img/Menu-Principal/img16.png">
+                <section class="title">
+                    <a href="#" class="mensagem-link-enviar-arquivo">Clique para enviar um arquivo</a>
+                </section>
+                <br /><br />
+                <section class="subtitle">
+                    Envie um arquivo do seu computador para a Lotus.tv
+                </section>
+            </div>
+            <div class="mensagens-bloc">
+                <img class="img-upload-mensagem" src="img/Menu-Principal/img17.png">
+                <section class="title">
+                    <a href="#" class="mensagem-link-gravar-video">Grave um video</a>
+                </section>
+                <br /><br />
+                <section class="subtitle">
+                    Grave um vídeo direto da sua webcam
+                </section>
+            </div>
+            <div class="mensagens-bloc">
+                <img class="img-upload-mensagem" src="img/Menu-Principal/img118.png">
+                <section class="title">
+                    <a href="#" class="mensagem-link-escrever">Escreva uma mensagem</a>
+                </section>
+                <br /><br />
+                <section class="subtitle">
+                    Escreva ua mensagem e envia para a Lotus.tv
+                </section>
+            </div>
+            <div class="mensagens-bloc">
+                <img class="img-upload-mensagem" src="img/Menu-Principal/img19.png">
+                <section class="title">
+                    <a href="#" class="mensagem-link-gravar-audio">Grave um audio</a>
+                </section>
+                <br /><br />
+                <section class="subtitle">
+                    Grave um audio e envie para a equipe Lotus.tv
+                </section>
+            </div>
+        </div>
+        <!--Mensagens-->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            $('.mensagem-link-enviar-arquivo').on('click touchstart', function(e){
+                $('.menu-content').load('mensagens/mensagens-enviar-arquivo.html');
+            });
+
+            $('.mensagem-link-gravar-video').on('click touchstart', function(e){
+                $('.menu-content').load('mensagens/mensagens-enviar-gravar-video.html');
+            });
+
+            $('.mensagem-link-escrever').on('click touchstart', function(e){
+                $('.menu-content').load('sistema_de_comentarios/formulario-com-autenticacao/index.html');
+            });
+
+            $('.mensagem-link-gravar-audio').on('click touchstart', function(e){
+                $('.menu-content').load('mensagens/mensagens-enviar-gravar-audio.html');
+            });
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    </body>
+</html>

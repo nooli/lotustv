@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+    <link type="text/css" rel="stylesheet" href="css/programacao-style.css">
+        <script>
+    function selectStep(n){
+
+        if(n == 1){
+            $(".progress-selected").animate({marginLeft: '2px'}, 300);
+        }else if(n == 2){
+            $(".progress-selected").animate({marginLeft: '130px'}, 300);
+        }else if(n == 3){
+            $(".progress-selected").animate({marginLeft: '260px'}, 300);
+        }
+        $('.content-switcher').hide();
+        $("#content"+n).show();
+
+    };
+  </script>
+    </head>
+    <body>
+        <!--Slider Container-->
+        <div class="prog-container">
+            <div class="content-switcher" id="content1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et enim bibendum, iaculis magna quis, pharetra ipsum. In ac mi eget tellus vehicula congue consectetur eget turpis. Aenean lacinia, sem vitae aliquam varius, sapien elit venenatis ante, ut euismod risus tellus et mauris. Pellentesque placerat varius fringilla. Donec nec ligula eu ante volutpat dapibus. Vivamus sed scelerisque justo. Duis cursus tempus justo in vulputate. Mauris porta augue vel est ullamcorper elementum. Aenean ut quam ultrices, ultrices est quis, vehicula enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse a pellentesque metus.</p>
+            </div>
+            <div class="content-switcher" id="content2">
+
+                <p>Este é o segundo programa. Pellentesque placerat varius fringilla. Donec nec ligula eu ante volutpat dapibus. Vivamus sed scelerisque justo. Duis cursus tempus justo in vulputate. Mauris porta augue vel est ullamcorper elementum. Aenean ut quam ultrices, ultrices est quis, vehicula enim. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse a pellentesque metus.</p>
+            </div>
+            <div class="content-switcher" id="content3">
+                <h1>Fim</h1>
+                <p>Estes foram os programas!</p>
+            </div>
+            <!---Progress Steps-->
+            <div class="progress-container">
+                <a href="#" class="item-number" onclick="selectStep(1); return false;">1</a>
+                <a href="#" class="item-number" onclick="selectStep(2); return false;">2</a>
+                <a href="#" class="item-number" onclick="selectStep(3); return false;">3</a>
+                <div class="progress-selected">
+
+                </div>
+            </div>
+
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+    </body>
+</html>
