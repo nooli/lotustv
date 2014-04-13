@@ -303,3 +303,10 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.imagem-menu {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
